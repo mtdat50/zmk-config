@@ -8,7 +8,6 @@
         &kp LGUI LH RH &smart_mouse                                            \
     )
 
-#include "zmk-helpers/key-labels/42.h"
 #include "base.keymap"
 /* #include "physical-layout.dtsi" */
 /**/
