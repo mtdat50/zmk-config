@@ -10,6 +10,6 @@
 
 #include "zmk-helpers/key-labels/42.h"
 #include "base.keymap"
-#include "physical-layout.dtsi"
-
-/{ chosen { zmk,physical-layout = &foostan_corne_6col_layout; }; };
+/* #include "physical-layout.dtsi" */
+/**/
+/* /{ chosen { zmk,physical-layout = &foostan_corne_6col_layout; }; }; */
