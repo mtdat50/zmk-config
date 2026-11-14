@@ -160,8 +160,10 @@ SIMPLE_MORPH(dot_inner_morph, CTL, &kp COLON, &kp GREATER_THAN)
 SIMPLE_MORPH(qexcl, SFT, &kp QMARK, &kp EXCL)
 
 // Tap: left/right parenthesis | Shft + tap: less-than/greater-than.
-// SIMPLE_MORPH(lpar_lt, SFT, &kp LPAR, &kp LT)
-// SIMPLE_MORPH(rpar_gt, SFT, &kp RPAR, &kp GT)
+SIMPLE_MORPH(lpar_lt, SFT, &kp LPAR, &kp LT)
+SIMPLE_MORPH(rpar_gt, SFT, &kp RPAR, &kp GT)
+SIMPLE_MORPH(lpar_none, SFT, &kp LPAR, &none) // remove lt, gt but keep the morph to avoid syntax error
+SIMPLE_MORPH(rpar_none, SFT, &kp RPAR, &none)
 
 // Tap: space | Shift + tap: dot -> space -> sticky shift | Hold: nav layer.
 ZMK_HOLD_TAP(lt_spc, bindings = <&mo>, <&spc_morph>; flavor = "balanced";
